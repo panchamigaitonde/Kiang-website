@@ -54,10 +54,11 @@ def home():
     <source src="images/landing-hero.mp4" type="video/mp4">
   </video>
   <div class="hero-shade"></div>
-  <div class="hero-content">
+  <div class="hero-content hero-center">
     <div class="eyebrow">India · Est. 2024</div>
-    <h1>Kiang Collective</h1>
-    <p class="hero-sub">Wildlife films and expeditions</p>
+    <h1 class="wordmark"><span class="wm-big">Kiang</span><span class="wm-small">Collective</span></h1>
+    <span class="wm-rule" aria-hidden="true"></span>
+    <p class="wm-tag">Wildlife films and expeditions</p>
   </div>
 </header>
 
