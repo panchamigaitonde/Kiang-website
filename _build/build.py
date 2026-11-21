@@ -55,7 +55,7 @@ def home():
   </video>
   <div class="hero-shade"></div>
   <div class="hero-content">
-    <div class="eyebrow">Bengaluru, India · Est. 2024</div>
+    <div class="eyebrow">India · Est. 2024</div>
     <h1>Kiang Collective</h1>
     <p class="hero-sub">Wildlife films and expeditions</p>
   </div>
