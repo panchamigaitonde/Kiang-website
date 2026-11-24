@@ -11,7 +11,7 @@ INSTAGRAM = "https://www.instagram.com/kiangcollective/"
 GOOGLE_REVIEWS = "https://share.google/rk4XKNHByz2eApeV1"
 
 # Spiti price in US dollars. Set to a number (e.g. 1750) to show it on the site.
-SPITI_USD = None
+SPITI_USD = 1620
 RAJASTHAN_USD = 6029
 
 NAV = [("films.html", "Films"), ("expeditions.html", "Expeditions"),
