@@ -100,8 +100,8 @@ def home():
     </a>
   </section>
 
-  <section class="credits-strip reveal" aria-label="Broadcasters and studios we have filmed for">
-    <div class="eyebrow">We have filmed for</div>
+  <section class="credits-strip reveal" aria-label="Broadcasters and studios our team has worked with">
+    <div class="eyebrow">Our team has worked with</div>
     <div class="credits-names">
       {credit_logos()}
     </div>
