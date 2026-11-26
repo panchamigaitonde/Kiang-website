@@ -89,7 +89,7 @@ def head(title, description, path, image="images/landing-hero-poster.jpg", image
 <link rel="apple-touch-icon" href="images/favicon-512.png">
 <link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=5">
+<link rel="stylesheet" href="assets/site.css?v=6">
 {ld}
 </head>
 <body>
