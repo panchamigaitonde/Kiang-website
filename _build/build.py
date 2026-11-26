@@ -22,7 +22,7 @@ def credit_logos():
     out = []
     for slug, name in CREDIT_NAMES:
         f = next((f"images/logos/{slug}.{x}" for x in ("svg", "png") if os.path.exists(os.path.join(OUT, f"images/logos/{slug}.{x}"))), None)
-        out.append(f'<img class="credit-logo" src="{f}" alt="{e(name)}">' if f else f"<span>{e(name)}</span>")
+        out.append(f'<img class="credit-logo logo-{slug}" src="{f}" alt="{e(name)}">' if f else f"<span>{e(name)}</span>")
     return "".join(out)
 
 
