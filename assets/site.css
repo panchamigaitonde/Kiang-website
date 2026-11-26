@@ -122,7 +122,9 @@ h3 { font-size: clamp(26px, 2.4vw, 32px); line-height: 1.05; font-weight: 600; }
 .credits-strip .eyebrow { flex: 0 0 220px; color: var(--muted); }
 .credit-logo { height: 44px; width: auto; max-width: 190px; object-fit: contain; }
 .credit-logo.logo-nhk { height: 60px; }
-.credit-logo.logo-blue-ant-media, .credit-logo.logo-smithsonian-channel { height: 58px; }
+.credit-logo.logo-smithsonian-channel { height: 58px; }
+.credit-logo.logo-blue-ant-media { height: 40px; }
+.credit-logo.logo-madras-crocodile-bank { height: 68px; }
 .credit-logo.logo-animal-planet { height: 66px; }
 .credit-logo.logo-terra-mater { height: 60px; }
 .credits-names { flex: 1 1 600px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 48px; font-family: var(--display); font-weight: 600; font-size: clamp(26px, 2.6vw, 34px); letter-spacing: 0.04em; text-transform: uppercase; }

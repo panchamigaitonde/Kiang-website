@@ -16,7 +16,8 @@ def write(name, content):
 CREDIT_NAMES = [("national-geographic", "National Geographic"), ("terra-mater", "Terra Mater"), ("nhk", "NHK"),
                 ("roundglass-sustain", "Roundglass Sustain"), ("discovery", "Discovery"), ("animal-planet", "Animal Planet"),
                 ("smithsonian-channel", "Smithsonian Channel"), ("nature-infocus", "Nature inFocus"),
-                ("blue-ant-media", "Blue Ant Media"), ("off-the-fence", "Off the Fence")]
+                ("blue-ant-media", "Blue Ant Media"), ("off-the-fence", "Off the Fence"),
+                ("madras-crocodile-bank", "Madras Crocodile Bank Trust")]
 
 
 def credit_logos():
