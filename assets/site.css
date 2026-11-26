@@ -85,6 +85,7 @@ h3 { font-size: clamp(26px, 2.4vw, 32px); line-height: 1.05; font-weight: 600; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,14,12,0.65) 0%, rgba(13,14,12,0) 22%, rgba(13,14,12,0) 50%, rgba(13,14,12,0.9) 100%); pointer-events: none; }
 .hero-content { position: absolute; left: 0; right: 0; bottom: 0; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--pad) 72px; z-index: 2; }
 .hero-content .eyebrow { margin-bottom: 20px; }
+.hero-center .eyebrow { color: var(--text); font-size: 14px; letter-spacing: 0.24em; text-shadow: 0 1px 3px rgba(0,0,0,.9), 0 0 18px rgba(0,0,0,.7); }
 .hero-content { text-shadow: 0 1px 14px rgba(0,0,0,.55); }
 .hero-sub { margin: 24px 0 0; font-family: var(--display); font-weight: 500; font-size: clamp(20px, 2.2vw, 28px); letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-2); }
 .hero.short { height: 72vh; min-height: 480px; max-height: 760px; }
@@ -108,18 +109,19 @@ h3 { font-size: clamp(26px, 2.4vw, 32px); line-height: 1.05; font-weight: 600; }
 
 /* ── Two doors ── */
 .doors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding-top: 24px; }
-.door { position: relative; display: block; height: 640px; overflow: hidden; background: var(--surface); }
-.door img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
-.door:hover img { transform: scale(1.04); }
-.door-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,14,12,0) 25%, rgba(13,14,12,0.55) 55%, rgba(13,14,12,0.96) 100%); }
-.door-body { position: absolute; left: 40px; right: 40px; bottom: 40px; text-shadow: 0 1px 12px rgba(0,0,0,.6), 0 0 2px rgba(0,0,0,.5); }
+.door { display: flex; flex-direction: column; background: var(--surface); }
+.door-img { aspect-ratio: 3 / 2; overflow: hidden; background: #000; }
+.door-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.door:hover .door-img img { transform: scale(1.03); }
+.door-body { padding: 36px 40px 44px; }
 .door-title { font-family: var(--display); font-weight: 700; font-size: clamp(52px, 5.4vw, 76px); line-height: 0.9; text-transform: uppercase; margin: 12px 0 0; }
 .door p { margin: 16px 0 22px; max-width: 460px; color: var(--text-2); }
 
 /* ── Credits strip ── */
 .credits-strip { display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: baseline; padding: 96px 0; border-bottom: 1px solid var(--line); }
 .credits-strip .eyebrow { flex: 0 0 220px; color: var(--muted); }
-.credits-names { flex: 1 1 600px; display: flex; flex-wrap: wrap; gap: 12px 44px; font-family: var(--display); font-weight: 600; font-size: clamp(26px, 2.6vw, 34px); letter-spacing: 0.04em; text-transform: uppercase; }
+.credit-logo { height: 40px; width: auto; max-width: 180px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; }
+.credits-names { flex: 1 1 600px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 48px; font-family: var(--display); font-weight: 600; font-size: clamp(26px, 2.6vw, 34px); letter-spacing: 0.04em; text-transform: uppercase; }
 
 /* ── Film cards (home) ── */
 .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
@@ -314,8 +316,7 @@ a:hover .play { opacity: 1; }
   .section:last-of-type { padding-bottom: 80px; }
   .band { padding: 80px 0; margin-top: 80px; }
   .doors, .card-grid, .short-grid, .journal-grid, .people, .collab, .cols, .cols.four, .form-grid { grid-template-columns: 1fr; }
-  .door { height: 520px; }
-  .door-body { left: 24px; right: 24px; bottom: 28px; }
+  .door-body { padding: 28px 24px 36px; }
   .credits-strip { padding: 64px 0; }
   .credits-strip .eyebrow { flex-basis: 100%; }
   .film-row, .bio, .feature, .split, .journal-feature, .contact-split { grid-template-columns: 1fr !important; gap: 28px; }

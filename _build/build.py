@@ -12,6 +12,20 @@ def write(name, content):
         f.write(content)
 
 
+
+CREDIT_NAMES = [("national-geographic", "National Geographic"), ("terra-mater", "Terra Mater"), ("nhk", "NHK"),
+                ("roundglass-sustain", "Roundglass Sustain"), ("discovery", "Discovery"), ("animal-planet", "Animal Planet")]
+
+
+def credit_logos():
+    """Show a logo from images/logos/<slug>.svg or .png when it exists; otherwise the name as text."""
+    out = []
+    for slug, name in CREDIT_NAMES:
+        f = next((f"images/logos/{slug}.{x}" for x in ("svg", "png") if os.path.exists(os.path.join(OUT, f"images/logos/{slug}.{x}"))), None)
+        out.append(f'<img class="credit-logo" src="{f}" alt="{e(name)}">' if f else f"<span>{e(name)}</span>")
+    return "".join(out)
+
+
 def credits_html(credits, kiang=""):
     parts = [f"<b>{e(p)}</b> — {e(r)}" for p, r in credits]
     if kiang:
@@ -65,22 +79,20 @@ def home():
 <div class="wrap">
   <section class="doors reveal" aria-label="Films and expeditions">
     <a class="door" href="films.html">
-      {pic("landscape-peacock", "An Indian peacock in full display")}
-      <div class="door-shade"></div>
+      <div class="door-img">{pic("landscape-peacock", "An Indian peacock in full display", style="object-position:58% 70%")}</div>
       <div class="door-body">
-        <div class="eyebrow">01 — For broadcasters and production houses</div>
+        <div class="eyebrow">For broadcasters and production houses</div>
         <div class="door-title">Kiang Films</div>
-        <p>Camera, research, and line and field production for wildlife films, with Terra Mater, NHK, PBS and Roundglass Sustain.</p>
+        <p>Camera, research, line production and field production for wildlife films and documentaries.</p>
         <span class="link">See the work →</span>
       </div>
     </a>
     <a class="door" href="expeditions.html">
-      {pic("landscape-snow-leopard", "Snow leopard on a rocky slope in winter Spiti")}
-      <div class="door-shade"></div>
+      <div class="door-img">{pic("landscape-snow-leopard", "Snow leopard on a rocky slope in winter Spiti", style="object-position:60% 40%")}</div>
       <div class="door-body">
-        <div class="eyebrow">02 — For wildlife enthusiasts</div>
+        <div class="eyebrow">For wildlife enthusiasts</div>
         <div class="door-title">Kiang Expeditions</div>
-        <p>Six guests per trip, led by Panchami and Pradeep. Snow leopards in Spiti, January 2027.</p>
+        <p>Wildlife expeditions led by Panchami and Pradeep.</p>
         <span class="link">See expeditions →</span>
       </div>
     </a>
@@ -89,7 +101,7 @@ def home():
   <section class="credits-strip reveal" aria-label="Who our crew has worked with">
     <div class="eyebrow">Our crew has worked with</div>
     <div class="credits-names">
-      <span>National Geographic</span><span>Terra Mater</span><span>NHK</span><span>PBS</span><span>Roundglass Sustain</span><span>Discovery</span><span>Animal Planet</span>
+      {credit_logos()}
     </div>
   </section>
 
@@ -228,7 +240,7 @@ def films():
              for i, f in enumerate(UPCOMING[:2] + FEATURES + SHORTS)]
     ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Films by the Kiang Collective crew", "itemListElement": items}
     write("films.html", head("Films — Wildlife Documentaries | Kiang Collective",
-                             "Wildlife films our crew has worked on, with credits: Terra Mater, NHK, PBS Nature, Roundglass Sustain, Discovery and more.",
+                             "Wildlife films our crew has worked on, with credits: Terra Mater, NHK, Roundglass Sustain, National Geographic, Discovery and more.",
                              "films.html", "images/landscape-peacock.jpg", "An Indian peacock in full display", [ld])
           + nav("films.html") + body + footer())
 
