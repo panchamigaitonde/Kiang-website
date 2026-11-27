@@ -236,7 +236,7 @@ def films():
         </div>
         <div class="terms" style="margin-top:48px">
           <div><div class="t">Permits we've handled</div><div class="d">Army permission to film the Great Indian Bustard near Pokharan, and forest department permits across India's national parks, wildlife sanctuaries and tiger reserves.</div></div>
-          <div><div class="t">Where we work</div><div class="d">Across India, from Ladakh and Spiti to the Thar, the Western Ghats, central India's tiger reserves and the Eastern Himalaya. Abroad: Singapore.</div></div>
+          <div><div class="t">Where we work</div><div class="d">Across India, from Ladakh and Spiti to the Thar, the Western Ghats, central India's tiger reserves and the Eastern Himalaya.</div></div>
           <div><div class="t">Languages</div><div class="d">English, Hindi, Kannada and Konkani.</div></div>
           <div><div class="t">Equipment</div><div class="d">Cinema camera packages, including RED, long lenses and specialist kit, sourced to suit each production.</div></div>
         </div>
