@@ -231,7 +231,7 @@ def films():
           <div><h3>Line production</h3><p>Budgets, schedules, crew, vehicles and stays, managed on the ground.</p></div>
           <div><h3>Field production and fixing</h3><p>A local team for visiting crews: guides, trackers, translators and logistics.</p></div>
           <div><h3>Camera</h3><p>Wildlife camera operators experienced in long observational and behaviour shoots.</p></div>
-          <div><h3>Aerial</h3><p>Aerial cinematography with our drone pilot, Dheeraj Aithal.</p></div>
+          <div><h3>Aerial</h3><p>Aerial cinematography for wildlife and landscape sequences.</p></div>
           <div><h3>Post-production</h3><p>Editing and finishing with our post-production collaborators.</p></div>
         </div>
         <div class="terms" style="margin-top:48px">
