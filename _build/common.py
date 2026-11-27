@@ -89,7 +89,7 @@ def head(title, description, path, image="images/landing-hero-poster.jpg", image
 <link rel="apple-touch-icon" href="images/favicon-512.png">
 <link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=9">
+<link rel="stylesheet" href="assets/site.css?v=10">
 {ld}
 </head>
 <body>
@@ -112,11 +112,7 @@ def nav(current, over_hero=True):
 """
 
 
-def footer():
-    mails = "".join(f'<a href="mailto:{m}">{m}</a>' for m in EMAILS)
-    return f"""</main>
-<footer class="site-footer">
-  <div class="footer-cta">
+CTA_BLOCK = '''  <div class="footer-cta">
     <div>
       <div class="display">Get in touch</div>
       <div class="footer-actions">
@@ -136,7 +132,15 @@ def footer():
       </div>
     </div>
   </div>
-  <div class="footer-base"><span>© 2026 Kiang Collective LLP</span><span>Films · Expeditions · Journal</span></div>
+'''
+
+
+def footer(cta=True):
+    mails = "".join(f'<a href="mailto:{m}">{m}</a>' for m in EMAILS)
+    cta_block = CTA_BLOCK.format(mails=mails, INSTAGRAM=INSTAGRAM, WHATSAPP=WHATSAPP, GOOGLE_REVIEWS=GOOGLE_REVIEWS, PHONE_LINK=PHONE_LINK, PHONE_DISPLAY=PHONE_DISPLAY) if cta else ""
+    return f"""</main>
+<footer class="site-footer">
+{cta_block}  <div class="footer-base"><span>© 2026 Kiang Collective LLP</span><span>Films · Expeditions · Journal</span></div>
 </footer>
 <div class="cookie" id="cookieBanner" role="region" aria-label="Cookie notice">
   <div class="cookie-inner">

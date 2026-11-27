@@ -220,6 +220,30 @@ def films():
     <p class="lead">These are the films our crew has worked on, and the role each of us played. Kiang Collective was set up in 2024; credits for earlier films are in our own names.</p>
   </section>
 
+  <section class="section reveal" aria-labelledby="wwd-h">
+    <div class="split">
+      <div><span class="eyebrow">For broadcasters and production houses</span><h2 id="wwd-h" style="margin-top:14px">What we do</h2>
+        <p style="margin-top:28px"><a class="link" href="contact.html#films">Tell us about your production →</a></p></div>
+      <div>
+        <div class="services">
+          <div><h3>Research and story development</h3><p>Species, seasons and locations researched before the shoot is booked; introductions to scientists and local communities.</p></div>
+          <div><h3>Permits and access</h3><p>Forest department, national park, wildlife sanctuary and tiger reserve permits, and defence-area permissions.</p></div>
+          <div><h3>Line production</h3><p>Budgets, schedules, crew, vehicles and stays, managed on the ground.</p></div>
+          <div><h3>Field production and fixing</h3><p>A local team for visiting crews: guides, trackers, translators and logistics.</p></div>
+          <div><h3>Camera</h3><p>Wildlife camera operators experienced in long observational and behaviour shoots.</p></div>
+          <div><h3>Aerial</h3><p>Aerial cinematography with our drone pilot, Dheeraj Aithal.</p></div>
+          <div><h3>Post-production</h3><p>Editing and finishing with our post-production collaborators.</p></div>
+        </div>
+        <div class="terms" style="margin-top:48px">
+          <div><div class="t">Permits we've handled</div><div class="d">Army permission to film the Great Indian Bustard near Pokharan, and forest department permits across India's national parks, wildlife sanctuaries and tiger reserves.</div></div>
+          <div><div class="t">Where we work</div><div class="d">Across India, from Ladakh and Spiti to the Thar, the Western Ghats, central India's tiger reserves and the Eastern Himalaya. Abroad: Singapore.</div></div>
+          <div><div class="t">Languages</div><div class="d">English, Hindi, Kannada and Konkani.</div></div>
+          <div><div class="t">Equipment</div><div class="d">Cinema camera packages, including RED, long lenses and specialist kit, sourced to suit each production.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section reveal" aria-labelledby="up-h">
     <div class="section-head"><div><span class="eyebrow">Coming in 2026</span><h2 id="up-h">Upcoming</h2></div></div>
     <div class="film-list">{up}
@@ -378,7 +402,7 @@ def contact():
               <div class="field"><label for="f-company">Company or broadcaster</label><input id="f-company" name="company" autocomplete="organization"></div>
               <div class="field"><label for="f-type">What do you need?</label>
                 <select id="f-type" name="project_type">
-                  <option>Camera crew</option><option>Research</option><option>Line or field production</option><option>Something else</option>
+                  <option>Camera crew</option><option>Research</option><option>Permits and access</option><option>Line or field production</option><option>Aerial</option><option>Post-production</option><option>Something else</option>
                 </select></div>
               <div class="field"><label for="f-where">Locations</label><input id="f-where" name="locations" placeholder="Where you want to film"></div>
               <div class="field"><label for="f-when">Dates</label><input id="f-when" name="dates" placeholder="Approximate shoot dates"></div>
@@ -426,7 +450,7 @@ def contact():
     write("contact.html", head("Contact | Kiang Collective",
                                "Get in touch with Kiang Collective about a film in India or one of our wildlife expeditions. We reply within two working days.",
                                "contact.html", "images/landscape-ftl.jpg", "A fan-throated lizard on the Chalkewadi plateau", [ld])
-          + nav("contact.html") + body + footer())
+          + nav("contact.html") + body + footer(cta=False))
     # Old address keeps working
     write("enquire.html", """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Contact | Kiang Collective</title>
 <meta http-equiv="refresh" content="0; url=contact.html"><link rel="canonical" href="https://kiang.in/contact.html"></head>

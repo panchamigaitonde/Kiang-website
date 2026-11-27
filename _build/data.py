@@ -4,13 +4,11 @@
 # credits: list of (person, role). kiang: Kiang Collective's role on the project, if any.
 UPCOMING = [
     {"title": "Wild India", "by": "Terra Mater", "year": "2026", "status": "Completed · release to be announced",
-     "credits": [("Panchami Gaitonde", "Camera"), ("Pradeep Hegde", "Camera")],
-     "kiang": "Research and line production"},
+     "credits": [], "kiang": "Line production and camera"},
     {"title": "Wild Day in Singapore", "by": "Terra Mater", "year": "2026", "status": "In post-production",
-     "credits": [("Panchami Gaitonde", "Assistant Producer"), ("Pradeep Hegde", "Camera")], "kiang": ""},
+     "credits": [], "kiang": "Camera"},
     {"title": "Natural history film for NHK", "by": "NHK", "year": "", "status": "In post-production · title to be announced",
-     "credits": [("Panchami Gaitonde", "Camera"), ("Pradeep Hegde", "Camera")],
-     "kiang": "Research, line production and field production"},
+     "credits": [], "kiang": "Line production and camera"},
 ]
 
 FEATURES = [
