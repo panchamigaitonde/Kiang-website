@@ -85,7 +85,7 @@ def home():
       <div class="door-img">{pic("landscape-peacock", "An Indian peacock in full display", style="object-position:58% 70%")}</div>
       <div class="door-body">
         <div class="eyebrow">For broadcasters and production houses</div>
-        <div class="door-title">Kiang Films</div>
+        <div class="door-title"><span class="dt-small">Kiang</span><span class="dt-big">Films</span></div>
         <p>Camera, research, line production and field production for wildlife films and documentaries.</p>
         <span class="link">See the work →</span>
       </div>
@@ -94,7 +94,7 @@ def home():
       <div class="door-img">{pic("landscape-snow-leopard", "Snow leopard on a rocky slope in winter Spiti", style="object-position:60% 40%")}</div>
       <div class="door-body">
         <div class="eyebrow">For wildlife enthusiasts</div>
-        <div class="door-title">Kiang Expeditions</div>
+        <div class="door-title"><span class="dt-small">Kiang</span><span class="dt-big">Expeditions</span></div>
         <p>Wildlife expeditions led by Panchami and Pradeep.</p>
         <span class="link">See expeditions →</span>
       </div>
