@@ -86,7 +86,7 @@ def home():
       <div class="door-body">
         <div class="eyebrow">For broadcasters and production houses</div>
         <div class="door-title"><span class="dt-small">Kiang</span><span class="dt-big">Films</span></div>
-        <p>Camera, research, line production and field production for wildlife films and documentaries.</p>
+        <p>Research, camera, line and field production, and post-production for wildlife films and documentaries.</p>
         <span class="link">See the work →</span>
       </div>
     </a>
@@ -160,7 +160,7 @@ def home():
 </div>
 """
     write("index.html", head("Kiang Collective — Wildlife Films and Expeditions",
-                             "Kiang Collective is Panchami Gaitonde and Pradeep Hegde: camera, research and production for wildlife films, and small wildlife expeditions led by us.",
+                             "Kiang Collective is Panchami Gaitonde and Pradeep Hegde: research, camera, production and post-production for wildlife films, and small wildlife expeditions led by us.",
                              "index.html", image_alt="A leopard in dry golden grass")
           + nav("index.html") + body + footer())
 
@@ -213,7 +213,7 @@ def films():
         <h3>{e(f['title'])}</h3>
         <div class="credit">{e(f['credit'])}</div>
       </a>""" for f in SHORTS)
-    body = page_hero("Films", "Camera, research and production for wildlife films",
+    body = page_hero("Films", "Research, camera, production and post-production for wildlife films",
                      "landscape-peacock", "An Indian peacock in full display", "Kiang Films") + f"""
 <div class="wrap">
   <section class="section reveal">
@@ -299,7 +299,7 @@ def about():
       <div class="prose" style="max-width:720px">
         <p>Kiang Collective grew out of years we each spent filming, leading expeditions and living in the outdoors. We first worked together in Ladakh, and the Himalaya has stayed at the centre of our work ever since.</p>
         <p>We started Kiang in 2024. Our first project was a snow leopard expedition in Ladakh for a small group of wildlife enthusiasts. Since then we've filmed across India and abroad, and led journeys in the Himalaya.</p>
-        <p>Our work has two sides. On films, we work with broadcasters and production houses: behind the camera, in research, and in line and field production. On expeditions, we take small groups into the same kinds of places, with time to watch, wait and learn from the people who live there.</p>
+        <p>Our work has two sides. On films, we work with broadcasters and production houses from start to finish: research, camera, line and field production, and post-production with our editing collaborators. On expeditions, we take small groups into the same kinds of places, with time to watch, wait and learn from the people who live there.</p>
       </div>
     </div>
   </section>
